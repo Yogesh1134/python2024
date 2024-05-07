@@ -1,0 +1,15 @@
+def calculate_series_sum(n):
+    total = 0
+    term = 2  
+    current_term = 0
+
+    for i in range(1, n + 1):
+        current_term = current_term * 10 + term
+        total += current_term
+
+    return total
+
+# Example usage
+n = 5
+series_sum = calculate_series_sum(n)
+print("Sum of the series up to {} terms: {}".format(n, series_sum))
